@@ -1,0 +1,52 @@
+body {
+  background: #ffeef8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+}
+
+.flower {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.petal {
+  width: 80px;
+  height: 80px;
+  background: pink;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.petal:nth-child(1) { top: 0; left: 35px; }
+.petal:nth-child(2) { top: 35px; right: 0; }
+.petal:nth-child(3) { bottom: 0; left: 35px; }
+.petal:nth-child(4) { top: 35px; left: 0; }
+
+.center {
+  width: 60px;
+  height: 60px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  left: 45px;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: #d63384;
+  font-weight: bold;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
